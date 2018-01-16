@@ -150,4 +150,3 @@ OSCAR_ORDER_STATUS_PIPELINE = {
     'Cancelled': (),
 }
 
-application = DjangoWhiteNoise(application)
