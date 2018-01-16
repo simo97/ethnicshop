@@ -149,5 +149,5 @@ OSCAR_ORDER_STATUS_PIPELINE = {
     'Being processed': ('Processed', 'Cancelled',),
     'Cancelled': (),
 }
-
+OSCAR_SHOP_NAME = "EthnicGeneration"
 OSCAR_MISSING_IMAGE_URL = MEDIA_URL + 'image_not_found.jpg'
