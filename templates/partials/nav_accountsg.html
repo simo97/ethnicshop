@@ -1,0 +1,21 @@
+{% load i18n %}
+
+<div class="header" id="home">
+	<div class="container">
+        {% if user.is_authenticated  %}
+		<ul>
+		    <li> <a href="{% url 'customer:profile-view' %}" ><i class="fa fa-unlock-alt" aria-hidden="true"></i> Mon compte</a></li>
+			<li> <a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Deconnection </a></li>
+			<li><i class="fa fa-phone" aria-hidden="true"></i> Call : 01234567898</li>
+			<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a></li>
+		</ul>
+        {% else %}
+        <ul>
+		    <li> <a id="login_link" href="{% url 'customer:login' %}" data-toggle="modal" data-target="#myModal"><i class="fa fa-unlock-alt" aria-hidden="true"></i> {% trans "Login or register" %} </a></li>
+
+			<li><i class="fa fa-phone" aria-hidden="true"></i> Call : 01234567898</li>
+			<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a></li>
+		</ul>
+        {% endif %}
+	</div>
+</div>

@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-14 23:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: templates/partials/nav_accounts.html:14
+msgid "Login or register"
+msgstr ""
+
+#: templates/promotions/home.html:136
+#, python-format
+msgid ""
+"\n"
+"                    <strong>%(num_results)s</strong> result - showing "
+"<strong>%(start)s</strong> to <strong>%(end)s</strong>.\n"
+"                "
+msgid_plural ""
+"\n"
+"                    <strong>%(num_results)s</strong> results - showing "
+"<strong>%(start)s</strong> to <strong>%(end)s</strong>.\n"
+"                "
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/promotions/home.html:142
+#, python-format
+msgid ""
+"\n"
+"                    <strong>%(num_results)s</strong> result.\n"
+"                "
+msgid_plural ""
+"\n"
+"                    <strong>%(num_results)s</strong> results.\n"
+"                "
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/promotions/home.html:155
+msgid "<strong>0</strong> results."
+msgstr ""
+
+#: templates/promotions/home.html:172
+msgid "No products found."
+msgstr ""
