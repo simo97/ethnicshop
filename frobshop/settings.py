@@ -150,3 +150,4 @@ OSCAR_ORDER_STATUS_PIPELINE = {
     'Cancelled': (),
 }
 
+OSCAR_MISSING_IMAGE_URL = MEDIA_URL + 'image_not_found.jpg
