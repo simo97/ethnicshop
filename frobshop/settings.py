@@ -25,11 +25,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = 'vreh5trh54nfwerfnmlkokiqnaithryubicnweg2f5we1t 87rw86frw79z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=False, cast=bool)
-ALLOWED_HOSTS = ['ethnicshop.herokuapp.com']
+DEBUG = True
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -133,7 +133,7 @@ MEDIA_ROOT = 'media'
 MEDIA_URL = '/media/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static")
+    os.path.join(BASE_DIR, "static"),
 ]
 
 HAYSTACK_CONNECTIONS = {

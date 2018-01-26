@@ -1,0 +1,13 @@
+<div id="{{ promotion.name|slugify }}" class="row">
+
+    <div  class="carousel carousel-slider">
+        {% for promotion_image in promotion.images.all %}
+            {% if promotion_image.link_url %}
+                <a class="carousel-item" href="{{ promotion_image.image.link_url }}" ><img  src="{{ promotion_image.image.url }}" title="{{ promotion_image.name }}"></a>
+            {% else %}
+                <a class="carousel-item" ><img  src="{{ promotion_image.image.url }}" title="{{ promotion_image.name }}"></a>
+            {% endfor %}
+        {% endfor %}
+        <a class="carousel-item" href="#one!"><img style="width:100%" src=""></a>
+    </div>
+</div>

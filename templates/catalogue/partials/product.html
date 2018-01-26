@@ -1,0 +1,39 @@
+{% load reviews_tags %}
+{% load thumbnail %}
+{% load i18n %}
+{% load display_tags %}
+{% load staticfiles %}
+
+{% block product %}
+
+<div class="col l3 m4 s6">
+    <div class="card small hoverable">
+        {% block product_image %}
+        <div class="card-image waves-effect waves-block waves-light">
+            {% with image=product.primary_image %}
+                    {% thumbnail image.original "x155" upscale=False as thumb %}
+            <img class="activator" src="{{ thumb.url }}">
+            {% endthumbnail %}
+                {% endwith %}
+        </div>
+        {% endblock %}
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">{{ product.get_title|truncatewords:4 }}
+                <i class="fa fa-plus"></i>
+            </span>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">{{ product.get_title|truncatewords:4 }}<i class="material-icons right">close</i></span>
+            {% block product_price %}
+            <div class="product_price">
+                    {% include "catalogue/partials/stock_record.html" %}
+                    {% if not product.is_parent %}
+                        {% include "catalogue/partials/add_to_basket_form_compact.html" %}
+                    {% endif %}
+                </div>
+            {% endblock %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

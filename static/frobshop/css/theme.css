@@ -1,0 +1,44 @@
+.container{
+    width: 80%;
+}
+
+.card{
+    /*border: 10px;
+    //border-radius: 25px;*/
+}
+
+.space-top{
+    padding-top: 20px;
+}
+
+.block-no-padding{
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+}
+
+.block-no-padding-all{
+    padding: 0px !important;
+}
+
+.collection-item{
+    padding: 10px !important;
+}
+
+.collection-child  {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    padding-left: 20px !important;
+    padding-right: 02px !important;
+}
+
+.collection .collection-item.active{
+    background-color: #5d4037;
+}
+
+.collection a.collection-item {
+    color: #5d4037;
+}
+
+nav .row {
+    margin-bottom: 1px;
+}

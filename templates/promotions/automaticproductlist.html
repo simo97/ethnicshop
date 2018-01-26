@@ -1,0 +1,16 @@
+{% load i18n %}
+{% load product_tags %}
+
+    <div class="sub-header">
+        <h3>{{ promotion.name }}</h3>
+    </div>
+<div class="row">
+    {{ promotion.description|safe }} <a class="right btn " href="{{ promotion.link_url }}">Voir plus</a>
+</div>
+
+
+    <div class="row">
+        {% for product in products %}
+            {% render_product product %}
+        {% endfor %}
+    </div>

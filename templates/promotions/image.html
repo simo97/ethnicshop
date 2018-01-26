@@ -1,0 +1,15 @@
+{% if promotion.image %}
+    <div class="col m6 s6 l4 ">
+        <div class="card Medium hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img src="{{ promotion.image.url }}">
+                <span class="card-title">{{ promotion.name }}</span>
+            </div>
+            {% if promotion.link_url %}
+                <div class="card-action">
+                  <a href="{{ promotion.link_url }}">{{ promotion.name }}</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endif %}

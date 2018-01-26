@@ -1,0 +1,18 @@
+{% extends "frobshop/layout.html" %}
+
+{% block content_wrapper %}
+<div class="row"> <!-- la partie de ce layout qui va contenir e titre de la page (catalogue) -->
+    <div class="col s12 m12 l12">
+        <span class="left flow-text brown-text ">{% block layout_2_title %}{% endblock %}</span>
+    </div>
+</div>
+<div class="row">
+    <div class="col s12 m12 l3"><!-- le cote gauche de ce layout -->
+        {% block layout_2_left %}{% endblock %}
+    </div>
+    <div class="col s12 m12 l9"><!-- le cote droit de ce layout (affichage du contenu prevu ici -->
+        {% include "partials/alert_messages.html" %}
+        {% block layout_2_content %}{% endblock %}
+    </div>
+</div>
+{% endblock %}
